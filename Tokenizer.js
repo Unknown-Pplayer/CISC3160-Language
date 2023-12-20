@@ -18,6 +18,7 @@ class Tokenizer {
     this.currentPosition = 0;
   }
 
+  //Iterate through the text and return the token with it type
   readNextToken() {
     if (this.currentPosition < this.endPosition) {
       for (let pattern in this.tokens) {
